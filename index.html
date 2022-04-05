@@ -15,36 +15,133 @@
   </style>
 </head>
 <body>
-
+<!-- background plus header -->
   <div class="bg-container">
     <img src="images/pattern-circles.svg" alt="Decorative Circles" class="circles">
     <h1 class="header"> Simple, traffic-based pricing</h1>
     <p class="text">Sign-up for our 30-day trial. No credit card required.</p>
-
+ <!--top container  -->
     <div class="card-container">
       
       <div class="display-flex">
         <div class="pageview" id="pageview">Pageviews</div>
         <div class="month" id="month">$ /month</div>
-        <input type="range" id="vol" name="vol" min="0" max="50">
       </div>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+
+            
+          <!-- Billing toggle switch -->
+          <br><br>
+         <div class="flex-row">
+           <p class="text-toggle">Monthly Billing</p>
+            <label for="switch" class="toggle"><input type="checkbox" id="switch"
+              class="checkbox"/></label>
+            <p class="text-toggle">Yearly Billing<button type="button" class="discount">-25%</button></p>
+            
+         </div>
+          
+       
+
+      
+      
+    </div>
+    <!-- bottom container -->
+    <div class="card-container">
+      <div class="display-flex">
+        <ul class="check-list">
+          <li class="list-team"><img src="images/icon-check.svg" alt="checkmark" class="checkmark">Unlimited websites</li>
+          <li class="list-team"><img src="images/icon-check.svg" alt="checkmark" class="checkmark">100% data ownership</li>
+          <li class="list-team"><img src="images/icon-check.svg" alt="checkmark" class="checkmark">Email reports
+          </li>
+        </ul>
+        <button type="button" class="start">Start my trial
+
+
+        
+
+      </div>
+
     </div>
   </div>
 
+  <!-- <style>
+    h1 {
+        color: green;
+    }
+            
+    /* toggle in label designing */
+    .toggle {
+        position : relative ;
+        display : inline-block;
+        width : 100px;
+        height : 52px;
+        background-color: red;
+        border-radius: 30px;
+        border: 2px solid gray;
+    }
+            
+    /* After slide changes */
+    .toggle:after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 1px; 
+        left: 1px;
+        transition:  all 0.5s;
+    }
+            
+    /* Toggle text */
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+            
+    /* Checkbox checked effect */
+    .checkbox:checked + .toggle::after {
+        left : 49px; 
+    }
+            
+    /* Checkbox checked toggle label bg color */
+    .checkbox:checked + .toggle {
+        background-color: green;
+    }
+            
+    /* Checkbox vanished */
+    .checkbox { 
+        display : none;
+    }
+</style>
+</head>
+
+<body>
+<center>
+    <h1>GeeksforGeeks</h1>
+    <b>Toggle switch with HTML and CSS</b>
+    <br><br>
+    <input type="checkbox" id="switch"
+                class="checkbox" />
+    <label for="switch" class="toggle">
+          
+<p>OFF    ON</p>
+
+    </label>
+  </center> -->
+
+<style>
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+</style>
+  
+  
+
  
-  
-
-  
-  
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
