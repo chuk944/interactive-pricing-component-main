@@ -37,7 +37,7 @@ html {
 
  --headerText: 2rem;
  --paraText: 1.5rem;
- --smText: 1rem;
+ --smText: 1.25rem;
  --chargeText: 3rem;
 
  /* Javascript Variables */
@@ -87,7 +87,8 @@ body {
     z-index: 2;         
 }
 
-.text {
+.text1 ,.text2 {
+    
     text-align: center;
     font-size: var(--paraText);
     color: var(--GrayishBlue);
@@ -99,11 +100,12 @@ body {
 .card-container1 {
     display: block;
     width: 85%;
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
     margin-top: 8em;
     border-radius: 10px;
     background-color: var(--White);
+    position: relative;
 }
 
 .display-flex {
@@ -141,15 +143,14 @@ body {
         height: 10px;
         -webkit-appearance: none; 
         
-        background:linear-gradient(to right, var(--StrongCyan) var(--sliderBar), var(--SoftCyan) 1%); 
-        /* background: var(--SoftCyan); */
+        background:linear-gradient(to right, var(--StrongCyan) var(--sliderBar), var(--SoftCyan) 1%);         
         border-radius: 20px;
-        outline: none;        
-        /* overflow:hidden;   */
+        outline: none;           
         box-shadow: inset 0 0 5px rgba(0,0,0,1);
         opacity: 0.7; 
         -webkit-transition: .2s;
         transition: opacity .2s;
+        cursor: pointer;
         
       }   
       
@@ -168,6 +169,14 @@ body {
         background-position: center;        
         cursor: pointer;   
         
+      }
+
+      .slider-content {          
+          width: 85%;
+          position: absolute;
+          top: 21%;
+          left:55%;
+          transform:translate(-50%);
       }
       
       /* Monthly Charge */         
@@ -197,15 +206,30 @@ body {
       .flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 15px;
+   
   }
 
   .text-toggle {
     display: block;      
-    font-size: var(--paraText); 
+    font-size: var(--smText); 
     color: var(--GrayishBlue);
+  }
+
+  .discount {
+      display: inline;
+      padding:.25em .6em;
+      margin-left: .5em;
+      background-color: var(--LightGrayishRed);
+      border-radius: 100px;
+      border: none;
+      color: var(--LightRed);
+  }
+
+  .addDisc {
+      display: none;
   }
 
 
@@ -213,24 +237,26 @@ body {
     .toggle {
         position : relative ;
         display : inline-block;
-        width : 50px;
-        height : 27px;
+        width : 45px;
+        height : 22px;
         background-color: var(--GrayishBlue);
         border-radius: 30px;
         border: 2px solid var(--GrayishBlue);
+        cursor: pointer;
     }
             
     /* After slide changes */
     .toggle:after {
         content: '';
         position: absolute;
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         border-radius: 50%;
         background-color: var(--White);
         top: 1px; 
         left: 1px;
         transition:  all 0.5s;
+        cursor: pointer;
     }
             
     
@@ -238,7 +264,7 @@ body {
             
     /* Checkbox checked effect */
     .checkbox:checked + .toggle::after {
-        left : 25px; 
+        left : 23px; 
     }
             
     /* Checkbox checked toggle label bg color */
@@ -249,6 +275,120 @@ body {
     /* Checkbox vanished */
     .checkbox { 
         display : none;
+        
     }
+
+
+    /* Bottom Card */
+
+
+    .card-container2 {
+        display: block;
+        width: 85%;
+        max-width: 700px;
+        margin: auto;
+        margin-top: 1em;
+        border-radius: 10px;
+        background-color: var(--White);
+    }
+
+    .display-flex2 {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+       
+    }
+
+    .check-list {
+        margin-top: 4em;
+        padding-right: 5em;
+        list-style: none;
+        text-align: center;
+        line-height: 32px;
+       
+    }
+
+    .list-team {
+        display: block; 
+        padding-left: 1em;     
+        font-size: var(--paraText); 
+        color: var(--GrayishBlue);
+    }
+
+    .checkmark {
+        padding-right: 1em;
+    }
+
+    .start {
+        display: block;
+        margin: 1.5em auto;
+        padding: .75em 2.75em;
+        border-radius: 100px;
+        background-color: var(--DarkDesaturatedBlue);
+        color: var(--White);
+        cursor: pointer;
+    }
+
+    @media only screen and (min-width: 600px){
+
+        .text1 {
+            display: inline;
+            margin-left:10%
+        }
+
+        .text2 {
+            display: inline;
+        }
+
+        .display-flex {
+            display: flex;
+            width: 100%;
+            flex-direction: row; 
+            justify-content:space-around;  
+            align-items: center;
+            
+            
+        }
+
+        .monthCharge-flex {
+           
+            margin-top: 1em;
+            
+        }
+
+         
+
+        .slider-content {   
+            top: 35%;            
+        }
+
+        .flex-row {
+            margin-top: 8em;
+        }
+
+        .display-flex2 {
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+
+        
+
+
+
+
+
+
+        .flex-row {            
+            justify-content: center;           
+          }
+
+       .addDisc {
+           display: inline;
+       }   
+
+    }
+        
+    
     
      
