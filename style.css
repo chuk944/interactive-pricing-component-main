@@ -41,7 +41,7 @@ html {
  --chargeText: 3rem;
 
  /* Javascript Variables */
- --sliderBar: 50%;
+ --sliderBar: 0%;
 }
 
 body {
@@ -78,6 +78,7 @@ body {
   top: 5%;
   left: 50%; 
   transform: translateX(-50%);
+  
  
 }
 
@@ -87,12 +88,16 @@ body {
     z-index: 2;         
 }
 
+
+
 .text1 ,.text2 {
     
     text-align: center;
     font-size: var(--paraText);
-    color: var(--GrayishBlue);
-    line-height:10px;
+    color: var(--GrayishBlue); 
+    line-height: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 /* upper card container */
@@ -103,6 +108,7 @@ body {
     max-width: 700px;
     margin: auto;
     margin-top: 8em;
+    padding: 1em;
     border-radius: 10px;
     background-color: var(--White);
     position: relative;
