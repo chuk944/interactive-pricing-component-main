@@ -69,4 +69,7 @@ const start = () => {
     }
     document.getElementById('monthCharge').innerHTML = '$' + total;
   }
-};
+
+  
+}
+
