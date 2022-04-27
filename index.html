@@ -21,78 +21,72 @@
 </head>
 <body>
 <!-- background plus header -->
-  <div class="bg-container">
-    <div class="logo">
-      <img src="images/pattern-circles.svg" alt="Decorative Circles" class="circles">
-      <h1 class="header"> Simple, traffic-based pricing</h1>
-      
-        <h2 class="text1">Sign-up for our 30-day trial.</h2><h2 class="text2">No credit card required.</h2>
-      
-      
-     
-    </div>
- <!--top container  -->
-    <div class="card-container1">
-      
-      <div class="display-flex">        
-        <div class="pageview upper" id="pageview">100K Pageviews</div>
-        
-
-      <div class="monthCharge-flex">
-        <div class="monthLg" id="monthCharge">$16.00</div>
-        <div class="monthSm">/ month</div>
+  <header>
+    <div class="bg-container">
+      <div class="logo">
+        <img src="images/pattern-circles.svg" alt="Decorative Circles" class="circles">
+        <h1 class="header"> Simple, traffic-based pricing</h1>
+    
+          <h2 class="text1">Sign-up for our 30-day trial.</h2><h2 class="text2">No credit card required.</h2>       
+    
       </div>
+  </header>
+ <main>
+   <!--top container  -->
+      <div class="card-container1">
+   
+        <div class="display-flex">
+          <div class="pageview upper" id="pageview">100K Pageviews</div>
+   
+        <div class="monthCharge-flex">
+          <div class="monthLg" id="monthCharge">$16.00</div>
+          <div class="monthSm">/ month</div>
+        </div>
+        </div>
+         <div class="slider-content">
+           <lable for="vol" ><input type="range" id="vol" name="vol" min="0" max="100" step="5" value="20" class="range slider" oninput="start()"></lable>
+          </div>
+   
+   
+            <!-- Billing toggle switch -->
+            <br><br>
+           <div class="flex-row">
+             <p class="text-toggle">Monthly Billing</p>
+              <input type="checkbox" id="switch"
+                class="checkbox" onclick="start()"/>
+                <label for="switch" class="toggle"></label>
+              <p class="text-toggle">Yearly Billing<button type="button" class="discount">-25%<span class="addDisc"> Discount</span></button></p>
+   
+           </div>
+   
+   
+   
+   
       </div>
-       <div class="slider-content"><input type="range" id="vol" name="vol" min="0" max="100" step="5" value="20" class="range slider" oninput="start()" ></div>       
-        
-
-            
-          <!-- Billing toggle switch -->
-          <br><br>
-         <div class="flex-row">
-           <p class="text-toggle">Monthly Billing</p>
-            <input type="checkbox" id="switch"
-              class="checkbox" onclick="start()"/>
-              <label for="switch" class="toggle"></label>
-            <p class="text-toggle">Yearly Billing<button type="button" class="discount">-25%<span class="addDisc"> Discount</span></button></p>
-            
-         </div>   
-          
-       
-
-      
-      
-    </div>
-    <!-- bottom container -->
-    <div class="card-container2">
-      <div class="display-flex2">
-        <ul class="check-list">
-          <li class="list-team"><img src="images/icon-check.svg" alt="checkmark" class="checkmark">Unlimited websites</li>
-          <li class="list-team"><img src="images/icon-check.svg" alt="checkmark" class="checkmark">100% data ownership</li>
-          <li class="list-team"><img src="images/icon-check.svg" alt="checkmark" class="checkmark">Email reports
-          </li>
-        </ul>
-        <button type="button" class="start">Start my trial
-
-
-        
-
+      <!-- bottom container -->
+      <div class="card-container2">
+        <div class="display-flex2">
+          <ul class="check-list">
+            <li class="list-team"><img src="images/icon-check.svg" alt="checkmark" class="checkmark">Unlimited websites</li>
+            <li class="list-team"><img src="images/icon-check.svg" alt="checkmark" class="checkmark">100% data ownership</li>
+            <li class="list-team"><img src="images/icon-check.svg" alt="checkmark" class="checkmark">Email reports
+            </li>
+          </ul>
+          <button type="button" class="start">Start my trial
+   
+        </div>
       </div>
-
     </div>
-  </div>
+ </main>   
+    
+
 
   
-    
-    
-            
-    
-
-</head> 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Charles Kondrath</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Charles Kondrath</a>.
+    </div>
+  </footer>
 </body> 
 </html>
