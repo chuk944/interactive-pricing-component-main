@@ -1,3 +1,6 @@
+
+document.getElementById('vol').value = 50;
+
 const start = () => {
   var r = document.querySelector(':root');
   let range = document.getElementById('vol').value;
