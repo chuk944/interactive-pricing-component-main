@@ -22,14 +22,14 @@
 <body>
 <!-- background plus header -->
   
-    <div class="bg-container">
+    <header class="bg-container">
       <div class="logo">
         <img src="images/pattern-circles.svg" alt="Decorative Circles" class="circles">
         <h1 class="header"> Simple, traffic-based pricing</h1>
     
           <h2 class="text1">Sign-up for our 30-day trial.</h2><h2 class="text2">No credit card required.</h2>       
     
-      </div>
+      </header>
   
  <main>
    <!--top container  -->
@@ -44,11 +44,13 @@
         </div>
         </div>
         
-           <form>
-             <lable for="vol" class="slider-content">
-               <input type="range" id="vol" name="vol" min="0" max="100" step="5" value="20" class="range slider" oninput="start()">
-               </lable>
-           </form>
+           
+             <span>
+               <lable for="vol" class="slider-content">
+                 <input type="range" id="vol" name="vol" min="0" max="100" step="5" value="20" class="range slider" oninput="start()">
+                 </lable>
+             </span>
+          
           
    
    
@@ -61,12 +63,10 @@
                 <label for="switch" class="toggle"></label>
               <p class="text-toggle">Yearly Billing<button type="button" class="discount">-25%<span class="addDisc"> Discount</span></button></p>
    
-           </div>
-   
-   
-   
+           </div>      
    
       </div>
+      
       <!-- bottom container -->
       <div class="card-container2">
         <div class="display-flex2">

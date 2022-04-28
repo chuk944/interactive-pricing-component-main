@@ -40,13 +40,15 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-image: url(images/bg-pattern.svg);
+  max-width: 1500px;
 }
 
 .bg-container {
   display: block;
   max-width: 1500px;
   margin: auto;
-  background-image: url(images/bg-pattern.svg);
+  
 }
 
 /* Circle and Header logo mobile */
